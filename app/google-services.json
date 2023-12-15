@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "74340255122",
+    "firebase_url": "https://aerobooking-e1b21-default-rtdb.firebaseio.com",
+    "project_id": "aerobooking-e1b21",
+    "storage_bucket": "aerobooking-e1b21.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:74340255122:android:3233a884c423fef326ed4b",
+        "android_client_info": {
+          "package_name": "com.example.aerobooking"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAVxBnpOgwU0Kunc6-kbe3P4a9rM0a8LyE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:74340255122:android:07cc78ca733b12d226ed4b",
+        "android_client_info": {
+          "package_name": "com.example.myaero"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAVxBnpOgwU0Kunc6-kbe3P4a9rM0a8LyE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
