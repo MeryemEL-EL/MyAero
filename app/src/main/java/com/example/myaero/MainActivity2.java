@@ -19,9 +19,9 @@ public class MainActivity2 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
         Button b1 =findViewById(R.id.button);
-        Button b2 =findViewById(R.id.butto);
-        b1.setBackgroundColor(getResources().getColor(R.color.white));
-        b2.setBackgroundColor(getResources().getColor(R.color.or));
+      //  Button b2 =findViewById(R.id.butto);
+        b1.setBackgroundColor(getResources().getColor(R.color.or));
+      //  b2.setBackgroundColor(getResources().getColor(R.color.or));
         TextView textViewGreeting = findViewById(R.id.textView3);
         String greeting = getGreeting();
         textViewGreeting.setText(greeting);

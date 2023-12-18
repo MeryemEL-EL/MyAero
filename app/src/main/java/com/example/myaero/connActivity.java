@@ -5,8 +5,10 @@ import androidx.fragment.app.FragmentManager;
 import androidx.viewpager.widget.ViewPager;
 import androidx.viewpager2.widget.ViewPager2;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -14,12 +16,13 @@ import android.widget.TextView;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.tabs.TabLayout;
 
-public class connActivity extends AppCompatActivity {
+public class connActivity extends AppCompatActivity implements loginTabFragment.OnButtonClickListener, singupTabFragment.OnButtonClickListener {
 
 
     private TabLayout tabLayout;
     private ViewPager2 viewPager2;
     private ViewPagerAdapter adapter;
+    Button b1, b2;
     //FloatingActionButton facebook,google,twitter;
     float v=0;
 
@@ -29,11 +32,17 @@ public class connActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_conn);
 
+
+        loginTabFragment loginTabFragment = new loginTabFragment();
+        singupTabFragment singupTabFragment = new singupTabFragment();
+
         tabLayout = findViewById(R.id.tab_layout);
         viewPager2 = findViewById(R.id.view_pager);
        //facebook = findViewById(R.id.fab_facebook);
        //google = findViewById(R.id.fab_google);
        //twitter = findViewById(R.id.fab_twitter);
+        b1 = findViewById(R.id.login);
+        b2 = findViewById(R.id.signup);
 
 
         tabLayout.addTab(tabLayout.newTab().setText("Login"));
@@ -41,6 +50,7 @@ public class connActivity extends AppCompatActivity {
         tabLayout.setTabTextColors(Color.parseColor("#0A22A8"),Color.parseColor("#FFFAA931")) ;
         //tabLayout.setTabTextColors(Color.BLACK, Color.parseColor("#FFA500"));
     //tabTextView.setTextSize(TypedValue.COMPLEX_UNIT_SP, 18); // Ajustez la valeur selon vos besoins
+
 
 
         FragmentManager fragmentManager = getSupportFragmentManager();
@@ -90,5 +100,11 @@ public class connActivity extends AppCompatActivity {
 
 
 
+    }
+    @Override
+    public void onButtonClick() {
+        //le code pour passer a l'activite 3
+        Intent intent = new Intent(connActivity.this, MainActivity3.class);
+        startActivity(intent);
     }
 }
